@@ -25,6 +25,147 @@
 
     <!-- Icons CDN (Lucide) -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Admit Cart",
+      "url": "https://admitcart.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://admitcart.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- EducationalOrganization & LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "@id": "https://admitcart.com/#organization",
+      "name": "Admit Cart",
+      "url": "https://admitcart.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://admitcart.com/wp-content/uploads/2024/04/logo2.png",
+        "width": 177,
+        "height": 55,
+        "caption": "Admit Cart Logo"
+      },
+      "image": "https://admitcart.com/wp-content/uploads/2024/04/logo2.png",
+      "description": "Making International Education Accessible. Empowering students with top university options, zero-collateral loan matching, and hassle-free visa approvals.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "301, Business Guild Complex, Law College Road, Erandwane",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411004",
+        "addressCountry": "IN"
+      },
+      "telephone": ["+919172950166", "+919209250166"],
+      "email": "info@admitcart.com",
+      "sameAs": [
+        "https://www.facebook.com/admitcart",
+        "https://www.instagram.com/admitcart",
+        "https://www.linkedin.com/company/admitcart"
+      ]
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When should I begin my study abroad application process?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is recommended to start at least 8 to 12 months before your target intake. This gives you ample time to prepare and clear tests (IELTS/GRE), prepare statement drafts (SOPs), apply to universities, search scholarships, and secure visa appointments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Admit Cart charge fees for counseling session?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, the initial counseling and profile evaluation strategy calls are completely free of charge. We evaluate your grades, test scores, and goals to build your personalized country checklist."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get education loans without collateral?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, through our banking partners (HDFC, ICICI, Avanse, etc.), you can get non-collateral education loans up to ₹75 Lakhs, depending on your target university rank, course type, and co-applicant's financial profile."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a STEM course in USA and what are its benefits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "STEM stands for Science, Technology, Engineering, and Mathematics. STEM-designated courses in the US qualify for a 24-month work extension in addition to the standard 12-month OPT, giving you a total of 3 years of work eligibility post graduation."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Services ItemList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Admit Cart Services",
+      "description": "Comprehensive support throughout your study abroad journey",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Service",
+            "name": "1:1 Career Counselling",
+            "description": "Receive personalized mapping from expert mentors to align your professional goals with international programs."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Service",
+            "name": "University Selection",
+            "description": "Shortlist from 650+ partner universities based on your academic profile, budgets, and location preferences."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "Visa Filing & Coaching",
+            "description": "Receive step-by-step document guidance and attend simulated mock interviews to secure visa approvals."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Service",
+            "name": "Education Loan Matching",
+            "description": "Secure collateral-free loans up to ₹75 Lakhs via leading banking partners."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 

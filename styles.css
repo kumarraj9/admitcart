@@ -571,43 +571,48 @@ ul {
 
 .logo-track {
     display: flex;
-    gap: 20px;
+    gap: 60px;
     align-items: center;
     width: max-content;
-    animation: scroll 32s linear infinite;
-    padding: 10px 0;
+    animation: scroll 35s linear infinite;
+    padding: 12px 0;
 }
 
-.logo-text-item {
-    font-size: 16px;
+.logo-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
     font-weight: 700;
-    color: var(--primary);
-    background-color: var(--bg-dark);
-    border: 1px solid var(--border-color);
-    padding: 10px 20px;
-    border-radius: 50px;
+    color: #64748b; /* Sleek, neutral Slate-500 */
     white-space: nowrap;
     font-family: var(--font-secondary);
     transition: var(--transition-smooth);
-    box-shadow: 0 4px 10px rgba(2, 12, 89, 0.02);
+    letter-spacing: -0.2px;
 }
 
-.logo-text-item.accent-text {
+.logo-item i {
+    width: 20px;
+    height: 20px;
+    color: #94a3b8; /* Muted Slate-400 for vector icon */
+    transition: var(--transition-smooth);
+}
+
+.logo-item:hover {
     color: var(--primary);
-    border-color: rgba(21, 213, 246, 0.5);
-    background-color: rgba(21, 213, 246, 0.04);
 }
 
-.logo-text-item:hover {
-    border-color: var(--primary);
-    background-color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(2, 12, 89, 0.06);
+.logo-item:hover i {
+    color: var(--secondary-hover);
+    transform: scale(1.15);
 }
 
-.logo-text-item.accent-text:hover {
-    border-color: var(--secondary-hover);
-    background-color: rgba(21, 213, 246, 0.08);
+.logo-item.bank-accent {
+    color: #475569; /* Slightly darker slate for banks */
+}
+
+.logo-item.bank-accent:hover {
+    color: var(--secondary-hover);
 }
 
 
